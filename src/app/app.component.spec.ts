@@ -1,11 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+
+import { ListModule } from "./list";
+import { SearchModule } from "./search";
+import { ModalModule } from "./modal";
+
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
+      imports: [ListModule, SearchModule, ModalModule]
     }).compileComponents();
   }));
   it('should create the app', async(() => {
