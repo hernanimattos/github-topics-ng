@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchComponent } from './search.component';
-import { ServiceService } from '../../../service/service.service';
+import { ServiceService } from '../../../service/topics.service';
 
 @NgModule({
   imports: [

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceService } from '../../../service/service.service';
+import { ServiceService } from '../../../service/topics.service';
 
 @Component({
   selector: "app-list",
@@ -8,19 +8,12 @@ import { ServiceService } from '../../../service/service.service';
   providers: [ServiceService]
 })
 export class ListComponent implements OnInit {
-	teste: string;
+		cursos;
+
   constructor(private service: ServiceService) {
-
-
+		this.cursos = this.service.listName;
   }
 
   ngOnInit() {}
-
-  gg(){
-	  const t = this.service.teste();
-	  return t;
-  }
-
-
 
 }
