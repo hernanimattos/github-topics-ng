@@ -7,13 +7,15 @@ import { ServiceService } from '../../../service/topics.service';
   styleUrls: ["./list.component.css"],
   providers: [ServiceService]
 })
-export class ListComponent implements OnInit {
+export class ListComponent {
 		cursos;
+		name:string;
 
   constructor(private service: ServiceService) {
-		this.cursos = this.service.listName;
+		this.name = 'hernani';
   }
 
-  ngOnInit() {}
+
+
 
 }

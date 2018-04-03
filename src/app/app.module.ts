@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { GithubTopicsModule } from './github-topics/github-topics.module';
+import { GithubTopicsModule } from "./github-topics/component/github-topics.module";
 
 
 
